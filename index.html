@@ -1,42 +1,734 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primera prueba</title>
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maldonado Beans | Specialty Coffee from El Salvador</title>
+
+    <meta
+        name="description"
+        content="Specialty coffee from El Salvador, carefully selected and roasted in Berlin."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Soy Axel</h1>
-    <p>Esta es la primera página.</p>
-  </header>
+    <!-- ================= HEADER ================= -->
 
-  <main>
-    <section>
-      <h2>Sobre mí</h2>
-      <p>Es mi primer proyecto.</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
+    <header class="header">
 
-    <section>
-      <h2>Contador de aprendizaje</h2>
-      <p>Llevo <span id="contador">0</span> cosas aprendidas.</p>
-      <button id="btn-sumar">Aprendí algo nuevo</button>
-    </section>
+        <a href="#inicio" class="logo">
+            MALDONADO<span>BEANS</span>
+        </a>
 
-    <button id="btn-tema">Cambiar tema</button>
-  </main>
+        <nav class="nav" id="nav">
 
-  <footer>
-    <p>Hecho con ilusión</p>
-  </footer>
+            <a href="#cafes">Coffees</a>
+            <a href="#origen">Origin</a>
+            <a href="#historia">Our Story</a>
+            <a href="#contacto">Contact</a>
 
-  <script src="app.js"></script>
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="cart-button"
+                id="cartButton"
+                aria-label="Abrir carrito"
+            >
+                Cart
+                <span id="cartCount">0</span>
+            </button>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Abrir menú"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    SPECIALTY COFFEE · EL SALVADOR
+                </p>
+
+                <h1>
+                    From origin.<br>
+                    <em>To Berlin.</em>
+                </h1>
+
+                <p class="hero-text">
+                    Exceptional coffee from El Salvador,
+                    carefully selected at origin and roasted
+                    with precision for Berlin.
+                </p>
+
+                <a href="#cafes" class="button button-light">
+                    Discover our coffee
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="coffee-bag">
+                    <span>MALDONADO</span>
+                    <strong>BEANS</strong>
+                    <small>EL SALVADOR<br>SPECIALTY COFFEE</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="intro section">
+
+            <div class="intro-small">
+                <p class="eyebrow">OUR PHILOSOPHY</p>
+            </div>
+
+            <div class="intro-main">
+
+                <h2>
+                    Coffee with a
+                    <em>place</em>,
+                    a story and a purpose.
+                </h2>
+
+                <p>
+                    We believe exceptional coffee begins with
+                    exceptional origins. Maldonado Beans connects
+                    carefully selected coffees from El Salvador
+                    with coffee lovers in Berlin.
+                </p>
+
+                <a href="#origen" class="text-link">
+                    Discover our origin →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COFFEES ================= -->
+
+        <section class="coffees section" id="cafes">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">OUR SELECTION</p>
+
+                    <h2>
+                        Meet our <em>coffees.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Explore coffees selected for their
+                    character, origin and unique cup profile.
+                </p>
+
+            </div>
+
+
+            <div class="coffee-grid">
+
+                <!-- COFFEE 1 -->
+
+                <article class="coffee-card">
+
+                    <div class="coffee-image coffee-image-one">
+
+                        <span class="origin-label">
+                            EL SALVADOR
+                        </span>
+
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-title">
+
+                            <div>
+                                <p class="coffee-origin">
+                                    EL SALVADOR · SHG
+                                </p>
+
+                                <h3>
+                                    Single Origin
+                                </h3>
+                            </div>
+
+                            <span class="price">
+                                €14.90
+                            </span>
+
+                        </div>
+
+                        <p class="coffee-description">
+                            A balanced specialty coffee with
+                            a clean cup, delicate acidity and
+                            notes of chocolate and caramel.
+                        </p>
+
+                        <div class="coffee-details">
+
+                            <span>
+                                Chocolate
+                            </span>
+
+                            <span>
+                                Caramel
+                            </span>
+
+                            <span>
+                                Citrus
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-product="El Salvador SHG"
+                            data-price="14.90"
+                        >
+                            Add to cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COFFEE 2 -->
+
+                <article class="coffee-card featured">
+
+                    <div class="coffee-image coffee-image-two">
+
+                        <span class="origin-label">
+                            EL SALVADOR
+                        </span>
+
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-title">
+
+                            <div>
+                                <p class="coffee-origin">
+                                    EL SALVADOR · PACAMARA
+                                </p>
+
+                                <h3>
+                                    Pacamara
+                                </h3>
+                            </div>
+
+                            <span class="price">
+                                €17.90
+                            </span>
+
+                        </div>
+
+                        <p class="coffee-description">
+                            An expressive coffee with a
+                            complex profile, elegant acidity
+                            and layers of fruit and sweetness.
+                        </p>
+
+                        <div class="coffee-details">
+
+                            <span>
+                                Red berries
+                            </span>
+
+                            <span>
+                                Honey
+                            </span>
+
+                            <span>
+                                Citrus
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-product="El Salvador Pacamara"
+                            data-price="17.90"
+                        >
+                            Add to cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COFFEE 3 -->
+
+                <article class="coffee-card">
+
+                    <div class="coffee-image coffee-image-three">
+
+                        <span class="origin-label">
+                            EL SALVADOR
+                        </span>
+
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-title">
+
+                            <div>
+                                <p class="coffee-origin">
+                                    EL SALVADOR · ARABICA
+                                </p>
+
+                                <h3>
+                                    Arabica
+                                </h3>
+                            </div>
+
+                            <span class="price">
+                                €15.90
+                            </span>
+
+                        </div>
+
+                        <p class="coffee-description">
+                            Smooth and approachable, with
+                            sweet notes and a rich, balanced
+                            finish.
+                        </p>
+
+                        <div class="coffee-details">
+
+                            <span>
+                                Cocoa
+                            </span>
+
+                            <span>
+                                Nuts
+                            </span>
+
+                            <span>
+                                Sweetness
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-product="El Salvador Arabica"
+                            data-price="15.90"
+                        >
+                            Add to cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ORIGIN ================= -->
+
+        <section class="origin" id="origen">
+
+            <div class="origin-image">
+
+                <div class="mountain-shape"></div>
+
+                <span>
+                    EL SALVADOR
+                </span>
+
+            </div>
+
+            <div class="origin-content">
+
+                <p class="eyebrow">
+                    FROM THE SOURCE
+                </p>
+
+                <h2>
+                    It starts in
+                    <em>El Salvador.</em>
+                </h2>
+
+                <p>
+                    El Salvador's volcanic landscapes,
+                    high altitudes and unique coffee-growing
+                    regions create exceptional conditions
+                    for specialty coffee.
+                </p>
+
+                <p>
+                    We work with coffees that preserve the
+                    character of their origin and bring that
+                    experience all the way to Berlin.
+                </p>
+
+                <a href="#historia" class="button button-dark">
+                    Our story
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROCESS ================= -->
+
+        <section class="process section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        KNOW YOUR COFFEE
+                    </p>
+
+                    <h2>
+                        From farm to
+                        <em>cup.</em>
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-item">
+
+                    <span>01</span>
+
+                    <h3>
+                        Origin
+                    </h3>
+
+                    <p>
+                        Coffee selected from
+                        carefully chosen regions
+                        in El Salvador.
+                    </p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>02</span>
+
+                    <h3>
+                        Selection
+                    </h3>
+
+                    <p>
+                        We focus on coffees with
+                        distinctive character and
+                        quality.
+                    </p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>03</span>
+
+                    <h3>
+                        Roasting
+                    </h3>
+
+                    <p>
+                        Roasted with precision
+                        to highlight the natural
+                        characteristics of each coffee.
+                    </p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>04</span>
+
+                    <h3>
+                        Berlin
+                    </h3>
+
+                    <p>
+                        From El Salvador to your
+                        cup in Berlin.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STORY ================= -->
+
+        <section class="story section" id="historia">
+
+            <div class="story-image">
+
+                <div class="story-placeholder">
+                    MALDONADO<br>
+                    BEANS
+                </div>
+
+            </div>
+
+            <div class="story-content">
+
+                <p class="eyebrow">
+                    OUR STORY
+                </p>
+
+                <h2>
+                    More than a
+                    <em>coffee.</em>
+                </h2>
+
+                <p>
+                    Maldonado Beans was born from a connection
+                    to Central America and a passion for
+                    exceptional coffee.
+                </p>
+
+                <p>
+                    Our mission is simple: bring coffees with
+                    character and origin closer to people who
+                    appreciate what is inside their cup.
+                </p>
+
+                <a href="#contacto" class="text-link">
+                    Get to know us →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BREW ================= -->
+
+        <section class="brew section">
+
+            <div class="brew-content">
+
+                <p class="eyebrow">
+                    BREW YOUR COFFEE
+                </p>
+
+                <h2>
+                    Great coffee deserves
+                    <em>the right brew.</em>
+                </h2>
+
+                <p>
+                    Discover the best way to prepare your
+                    Maldonado Beans at home.
+                </p>
+
+                <div class="brew-methods">
+
+                    <span>Espresso</span>
+                    <span>V60</span>
+                    <span>AeroPress</span>
+                    <span>French Press</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+
+        <section class="newsletter section" id="contacto">
+
+            <div>
+
+                <p class="eyebrow">
+                    STAY IN THE LOOP
+                </p>
+
+                <h2>
+                    Good coffee.
+                    <em>Better stories.</em>
+                </h2>
+
+                <p>
+                    New coffees, stories from origin and
+                    brewing inspiration.
+                </p>
+
+            </div>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="#inicio" class="logo footer-logo">
+                    MALDONADO<span>BEANS</span>
+                </a>
+
+                <p>
+                    Specialty coffee from El Salvador.<br>
+                    Roasted for Berlin.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+
+                    <a href="#cafes">Coffee</a>
+                    <a href="#origen">Origin</a>
+                    <a href="#historia">Our Story</a>
+                </div>
+
+                <div>
+                    <h4>Follow</h4>
+
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Maldonado Beans
+            </span>
+
+            <div>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART ================= -->
+
+    <aside class="cart" id="cart">
+
+        <div class="cart-header">
+
+            <h2>
+                Your cart
+            </h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+        <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+        <div class="cart-bottom">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    €0.00
+                </strong>
+
+            </div>
+
+            <button class="checkout-button">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
