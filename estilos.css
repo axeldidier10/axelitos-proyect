@@ -54,7 +54,8 @@ input {
     --gold: #c49a55;
 
     --white: #ffffff;
-
+  
+    --max-width: 1280px;
 }
 
 
@@ -134,7 +135,7 @@ h1 em {
 }
 
 .button-dark:hover {
-    background: var(--green);
+    background: var(--brown);
 }
 
 .text-link {
