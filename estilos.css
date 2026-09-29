@@ -596,8 +596,8 @@ h1 em {
     background:
         linear-gradient(
             150deg,
-            #4b604c,
-            #1c2c23
+            #6B4935,
+            #2A1A13
         );
 }
 
@@ -617,7 +617,7 @@ h1 em {
     bottom: -350px;
     left: -100px;
 
-    background: #17251e;
+    background: #21130E;
 }
 
 .origin-image::after {
@@ -627,7 +627,7 @@ h1 em {
     bottom: -300px;
     right: -150px;
 
-    background: #304638;
+    background: #4A3023;
 }
 
 .origin-image span {
