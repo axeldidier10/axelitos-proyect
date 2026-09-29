@@ -728,15 +728,15 @@ h1 em {
         );
 }
 .story-photo {
-    width: 72%;
-    max-width: 520px;
-    height: auto;
+    width: 78%;
+    max-width: 500px;
+    height: 88%;
 
-    object-fit: contain;
+    object-fit: cover;
 
     animation: storyFloat 5s ease-in-out infinite;
 
-    filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.28));
+    filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.30));
 }
 
 @keyframes storyFloat {
