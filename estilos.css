@@ -44,17 +44,16 @@ input {
 :root {
 
     --cream: #f4f0e8;
-    --cream-dark: #e9e2d4;
+    --cream-dark: #e7dfd1;
 
-    --black: #20201d;
-    --brown: #5b3c2e;
+    --black: #1b1714;
 
-    --green: #26382e;
-    --green-light: #354a3e;
+    --brown: #5a3a29;
+    --brown-light: #765039;
+
+    --gold: #c49a55;
 
     --white: #ffffff;
-
-    --max-width: 1280px;
 
 }
 
@@ -245,7 +244,7 @@ h1 em {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    background: var(--green);
+    background: #4a3022;
 
     color: var(--cream);
 
@@ -288,38 +287,59 @@ h1 em {
     align-items: center;
     justify-content: center;
 
+    overflow: hidden;
+
     background:
         radial-gradient(
-            circle at center,
-            #8b674d 0%,
-            #594133 45%,
-            #35271f 100%
+            circle at 50% 45%,
+            #604331 0%,
+            #2b1c15 45%,
+            #110d0a 100%
         );
 }
 
-.coffee-bag {
-    width: 280px;
-    height: 410px;
+.logo-display {
+    width: min(75%, 520px);
 
     display: flex;
-    flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
-    text-align: center;
+    animation: logoFloating 5s ease-in-out infinite;
 
-    padding: 40px;
+    filter:
+        drop-shadow(0 25px 35px rgba(0, 0, 0, 0.55))
+        drop-shadow(0 0 25px rgba(196, 154, 85, 0.12));
+}
 
-    background: #eee5d4;
+.logo-display img {
+    width: 100%;
+    height: auto;
 
-    color: var(--black);
+    display: block;
 
-    box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.25);
+    mix-blend-mode: screen;
 
-    transform: rotate(-4deg);
+    transform: rotate(-2deg);
 
-    animation: floating 4s ease-in-out infinite;
+    transition: transform 0.6s ease;
+}
+
+.logo-display:hover img {
+    transform: rotate(0deg) scale(1.03);
+}
+
+@keyframes logoFloating {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(1deg);
+    }
+
 }
 
 .coffee-bag span {
