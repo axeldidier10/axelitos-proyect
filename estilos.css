@@ -716,9 +716,10 @@ h1 em {
     min-height: 600px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
+
+    padding: 40px;
 
     background:
         linear-gradient(
@@ -726,6 +727,8 @@ h1 em {
             #b69b7b,
             #4e382b
         );
+
+    overflow: hidden;
 }
 .story-photo {
     width: 78%;
