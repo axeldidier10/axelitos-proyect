@@ -727,7 +727,28 @@ h1 em {
             #4e382b
         );
 }
+.story-photo {
+    width: 72%;
+    max-width: 520px;
+    height: auto;
 
+    object-fit: contain;
+
+    animation: storyFloat 5s ease-in-out infinite;
+
+    filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.28));
+}
+
+@keyframes storyFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
 .story-placeholder {
     color: var(--cream);
 
