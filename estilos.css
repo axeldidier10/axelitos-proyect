@@ -403,6 +403,16 @@ h1 em {
     font-size: 1.1rem;
 }
 
+/* ----------  OUR PHILOSOPHY PHOTO ---------- */
+
+.philosophy-photo {
+    width: 100%;
+    max-width: 420px;
+    height: 360px;
+    margin-top: 45px;
+    object-fit: cover;
+    display: block;
+}
 
 /* ---------- COFFEES ---------- */
 
