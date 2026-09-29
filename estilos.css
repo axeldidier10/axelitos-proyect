@@ -50,7 +50,8 @@ input {
 
     --brown: #5a3a29;
     --brown-light: #765039;
-
+    --brown-dark: #3A241A;
+   
     --gold: #c49a55;
 
     --white: #ffffff;
@@ -561,7 +562,7 @@ h1 em {
 }
 
 .add-cart:hover {
-    background: var(--green);
+    background: var(--brown-dark);
 }
 
 
@@ -574,7 +575,7 @@ h1 em {
 
     margin-top: 100px;
 
-    background: var(--green);
+    background: var(--brown-dark);
 
     color: var(--cream);
 }
